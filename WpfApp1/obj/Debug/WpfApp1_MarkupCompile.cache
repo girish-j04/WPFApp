@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\giris\source\repos\WpfApp1\WpfApp1\obj\Debug\
+D:\WF\WPF\WPFApp\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\giris\source\repos\WpfApp1\WpfApp1\App.xaml
+D:\WF\WPF\WPFApp\WpfApp1\App.xaml
 5-573747451
 
-12-1155963782
-13-1310406943
+13271364494
+141475458494
 MainWindow.xaml;MVVM\View\FeaturedView.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 False

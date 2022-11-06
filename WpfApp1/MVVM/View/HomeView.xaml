@@ -32,7 +32,8 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Expected&#x0a; 28&#186; C "
+                        <TextBlock Name="Temperature" 
+                               Text="Expected&#x0a; 28&#186; C "
                                Foreground="white"
                                FontSize="28"
                                Margin="20,10,10,0"/>
@@ -81,26 +82,60 @@
                    Margin="0,0,0,10"/>
 
             <StackPanel Orientation="Horizontal">
-                <Border Width="150"
+                <Border Name="Hyderabad"
+                        Width="150"
                         Height="150"
                         Background="#8443ff"
                         CornerRadius="10"
-                        Margin="0"/>
+                        Margin="0"
+                        PreviewMouseDown="GetWeather">
+                    <TextBlock Text="Hyderabad"
+                               Foreground="white"
+                               FontSize="28"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                </Border>
 
-                <Border Width="150"
+                <Border Name="Bangalore"
+                        Width="150"
                         Height="150"
                         Background="#4e99ff"
-                        CornerRadius="10"/>
+                        CornerRadius="10"
+                        PreviewMouseDown="GetWeather">
 
-                <Border Width="150"
+                    <TextBlock Text="Bangalore"
+                               Foreground="white"
+                               FontSize="28"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
+
+                <Border Name="Taguig"
+                        Width="150"
                         Height="150"
                         Background="#4eff91"
-                        CornerRadius="10"/>
+                        CornerRadius="10"
+                        PreviewMouseDown="GetWeather">
+                    <TextBlock Text="Taguig"
+                               Foreground="white"
+                               FontSize="28"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
 
                 <Border Width="150"
                         Height="150"
                         Background="#ecff4e"
-                        CornerRadius="10"/>
+                        CornerRadius="10">
+                    <TextBlock Text=""
+                               Foreground="white"
+                               FontSize="28"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
             </StackPanel>
 
 
