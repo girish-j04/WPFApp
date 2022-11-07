@@ -9,8 +9,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowDrop="True">
-
+        AllowDrop="True"
+        Icon="Theme/newicon.ico">
 
     <Window.DataContext>
         <viewModel:MainViewModel/>

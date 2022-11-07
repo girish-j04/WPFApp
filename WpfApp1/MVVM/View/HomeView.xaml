@@ -5,8 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="460" d:DesignWidth="800">
+             d:DesignHeight="460" d:DesignWidth="720">
+
     <StackPanel>
+
         <TextBlock Text="Today's Forecast"
                    Foreground="White"
                    FontSize="28"
@@ -15,8 +17,10 @@
 
         <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,10">
+            
             <Border Width="400"
                     Height="200">
+                
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#5bc3ff" Offset="0.0"/>
@@ -31,6 +35,7 @@
                 </Border.Clip>
 
                 <Grid>
+                    
                     <StackPanel>
                         <TextBlock Name="Temperature" 
                                Text="Expected&#x0a; 28&#186; C "
@@ -82,13 +87,17 @@
                    Margin="0,0,0,10"/>
 
             <StackPanel Orientation="Horizontal">
+
                 <Border Name="Hyderabad"
                         Width="150"
                         Height="150"
                         Background="#8443ff"
                         CornerRadius="10"
                         Margin="0"
-                        PreviewMouseDown="GetWeather">
+                        PreviewMouseDown="GetWeather"
+                        Style="{StaticResource HighlightOnHover}">
+
+
                     <TextBlock Text="Hyderabad"
                                Foreground="white"
                                FontSize="28"
@@ -101,7 +110,8 @@
                         Height="150"
                         Background="#4e99ff"
                         CornerRadius="10"
-                        PreviewMouseDown="GetWeather">
+                        PreviewMouseDown="GetWeather"
+                        Style="{StaticResource HighlightOnHover}">
 
                     <TextBlock Text="Bangalore"
                                Foreground="white"
@@ -116,7 +126,8 @@
                         Height="150"
                         Background="#4eff91"
                         CornerRadius="10"
-                        PreviewMouseDown="GetWeather">
+                        PreviewMouseDown="GetWeather"
+                        Style="{StaticResource HighlightOnHover}">
                     <TextBlock Text="Taguig"
                                Foreground="white"
                                FontSize="28"
@@ -128,7 +139,9 @@
                 <Border Width="150"
                         Height="150"
                         Background="#ecff4e"
-                        CornerRadius="10">
+                        CornerRadius="10"
+                        Style="{StaticResource HighlightOnHover}">
+                    
                     <TextBlock Text=""
                                Foreground="white"
                                FontSize="28"

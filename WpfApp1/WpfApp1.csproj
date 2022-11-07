@@ -80,6 +80,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Theme\BorderTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Theme\MenuButtonTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\weather-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Theme\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Theme\newicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

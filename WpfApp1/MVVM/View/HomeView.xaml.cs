@@ -28,7 +28,7 @@ namespace WpfApp1.MVVM.View
             InitializeComponent();
         }
 
-        string API_KEY = "8512bcca9b008f3ba2fd20c8d7c52263";
+        readonly string API_KEY = "8512bcca9b008f3ba2fd20c8d7c52263";
 
         private void GetWeather(object sender, MouseButtonEventArgs e)
         {
