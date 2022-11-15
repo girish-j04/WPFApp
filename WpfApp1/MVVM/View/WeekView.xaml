@@ -1,0 +1,126 @@
+﻿<UserControl x:Class="WpfApp1.MVVM.View.WeekView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.MVVM.View" xmlns:viewmodel="clr-namespace:WpfApp1.MVVM.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="460" d:DesignWidth="720">
+
+    <StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="Today's Forecast"
+                       Foreground="White"
+                       FontSize="28"
+                       HorizontalAlignment="Left"
+                       Margin="5,10,0,20"/>
+
+
+        </StackPanel>
+
+        
+
+        <StackPanel>
+
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <!--<TextBlock Text="This Week"
+                   Foreground="White"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>-->
+
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Margin" Value="0,15,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <Border Name="Hyderabad"
+                        Width="132"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"
+                        Margin="0"
+                        Style="{StaticResource HighlightOnHover}">
+
+
+                    <TextBlock Text="7 AM"
+                               Foreground="white"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Center"/>
+                </Border>
+
+                <Border Name="Bangalore"
+                        Width="132"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"
+                        Style="{StaticResource HighlightOnHover}">
+
+                    <TextBlock Text="10 AM"
+                               Foreground="white"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
+
+                <Border Name="Taguig"
+                        Width="132"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"
+                        Style="{StaticResource HighlightOnHover}">
+                    
+                    <TextBlock Text="1 PM"
+                               Foreground="white"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
+
+                <Border Width="132"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"
+                        Style="{StaticResource HighlightOnHover}">
+
+                    <TextBlock Text="4 PM"
+                               Foreground="white"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
+
+                <Border Width="132"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"
+                        Style="{StaticResource HighlightOnHover}">
+
+                    <TextBlock Text="7 PM"
+                               Foreground="white"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Center"/>
+
+                </Border>
+            </StackPanel>
+
+
+
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

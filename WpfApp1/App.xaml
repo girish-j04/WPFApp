@@ -21,6 +21,10 @@
                 <view:FeaturedView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:WeekViewModel}">
+                <view:WeekView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

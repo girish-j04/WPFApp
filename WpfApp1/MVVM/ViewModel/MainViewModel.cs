@@ -11,8 +11,10 @@ namespace WpfApp1.MVVM.ViewModel
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand FeaturedViewCommand { get; set; }
+        public RelayCommand WeekViewCommand { get; set; }
         public HomeViewModel HomeVM { get; set; }
         public FeaturedViewModel FeaturedVM { get; set; }
+        public WeekViewModel WeekVM { get; set; }
 
         private object _currentView;
 
@@ -30,6 +32,7 @@ namespace WpfApp1.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             FeaturedVM = new FeaturedViewModel();
+            WeekVM = new WeekViewModel();
             CurrentView = HomeVM;
 
 
@@ -41,6 +44,11 @@ namespace WpfApp1.MVVM.ViewModel
             FeaturedViewCommand = new RelayCommand(o =>
             {
                 CurrentView = FeaturedVM;
+            }, o => true);
+
+            WeekViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = WeekVM;
             }, o => true);
         }
     }

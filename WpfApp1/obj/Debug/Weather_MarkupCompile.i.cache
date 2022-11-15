@@ -1,20 +1,20 @@
 ﻿Weather
 
 
-winexe
+exe
 C#
 .cs
-D:\WF\WPF\WPFApp\WpfApp1\obj\Debug\
+C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-D:\WF\WPF\WPFApp\WpfApp1\App.xaml
-614593497
+C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\App.xaml
+7-1433578149
 
-161524722402
-141475458494
-MainWindow.xaml;MVVM\View\FeaturedView.xaml;MVVM\View\HomeView.xaml;Theme\BorderTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+181091179844
+14-1707191294
+MainWindow.xaml;MVVM\View\FeaturedView.xaml;MVVM\View\HomeView.xaml;MVVM\View\WeekView.xaml;Theme\BorderTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 True
 
