@@ -15,6 +15,9 @@
                        FontSize="28"
                        HorizontalAlignment="Left"
                        Margin="5,10,0,20"/>
+            <Button Content="Get Forecast"
+                    Margin="10"
+                    Click="GetForecast"/>
 
 
         </StackPanel>
@@ -43,7 +46,7 @@
                     </Style>
                 </StackPanel.Resources>
 
-                <Border Name="Hyderabad"
+                <Border
                         Width="132"
                         Height="150"
                         Background="#4e99ff"
@@ -52,40 +55,72 @@
                         Style="{StaticResource HighlightOnHover}">
 
 
-                    <TextBlock Text="7 AM"
-                               Foreground="white"
-                               FontSize="20"
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock Name="time1"
+                                   Text=""
+                                   Foreground="white"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   />
+                        <TextBlock Name="temp1"
+                                   Text=""
+                                   Foreground="white"
+                                   FontSize="40"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   />
+                    </StackPanel>
                 </Border>
 
-                <Border Name="Bangalore"
+                <Border 
                         Width="132"
                         Height="150"
                         Background="#4e99ff"
                         CornerRadius="10"
                         Style="{StaticResource HighlightOnHover}">
 
-                    <TextBlock Text="10 AM"
-                               Foreground="white"
-                               FontSize="20"
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock Text=""
+                                   Foreground="white"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   Name="time2"/>
+
+                        <TextBlock Name="temp2"
+                                       Text=""
+                                       Foreground="white"
+                                       FontSize="40"
+                                       VerticalAlignment="Top"
+                                       HorizontalAlignment="Center"
+                                       />
+                    </StackPanel>
 
                 </Border>
 
-                <Border Name="Taguig"
+                <Border
                         Width="132"
                         Height="150"
                         Background="#4e99ff"
                         CornerRadius="10"
                         Style="{StaticResource HighlightOnHover}">
-                    
-                    <TextBlock Text="1 PM"
-                               Foreground="white"
-                               FontSize="20"
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock Text=""
+                                   Foreground="white"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   Name="time3"/>
+
+                        <TextBlock Name="temp3"
+                                           Text=""
+                                           Foreground="white"
+                                           FontSize="40"
+                                           VerticalAlignment="Top"
+                                           HorizontalAlignment="Center"
+                                           />
+                    </StackPanel>
 
                 </Border>
 
@@ -95,11 +130,23 @@
                         CornerRadius="10"
                         Style="{StaticResource HighlightOnHover}">
 
-                    <TextBlock Text="4 PM"
-                               Foreground="white"
-                               FontSize="20"
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock Text=""
+                                   Foreground="white"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   Name="time4"/>
+
+                        <TextBlock Name="temp4"
+                                           Text=""
+                                           Foreground="white"
+                                           FontSize="40"
+                                           VerticalAlignment="Top"
+                                           HorizontalAlignment="Center"
+                                           />
+                    </StackPanel>
+
 
                 </Border>
 
@@ -109,11 +156,22 @@
                         CornerRadius="10"
                         Style="{StaticResource HighlightOnHover}">
 
-                    <TextBlock Text="7 PM"
-                               Foreground="white"
-                               FontSize="20"
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock Text=""
+                                   Foreground="white"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   Name="time5"/>
+
+                        <TextBlock Name="temp5"
+                                           Text=""
+                                           Foreground="white"
+                                           FontSize="40"
+                                           VerticalAlignment="Top"
+                                           HorizontalAlignment="Center"
+                                           />
+                    </StackPanel>
 
                 </Border>
             </StackPanel>

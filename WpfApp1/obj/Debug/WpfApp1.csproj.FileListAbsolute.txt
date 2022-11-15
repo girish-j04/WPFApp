@@ -80,3 +80,5 @@ C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\bin\Debug\Weather.exe
 C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\bin\Debug\Weather.pdb
 C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\obj\Debug\MVVM\View\WeekView.baml
 C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\obj\Debug\Weather.g.resources
+D:\WF\WPF\WPFApp\WpfApp1\obj\Debug\MVVM\View\WeekView.g.cs
+D:\WF\WPF\WPFApp\WpfApp1\obj\Debug\MVVM\View\WeekView.baml

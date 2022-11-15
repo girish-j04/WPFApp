@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\obj\Debug\
+D:\WF\WPF\WPFApp\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\App.xaml
+D:\WF\WPF\WPFApp\WpfApp1\App.xaml
 7-1433578149
 
 181091179844
-14-1707191294
+141475458494
 MainWindow.xaml;MVVM\View\FeaturedView.xaml;MVVM\View\HomeView.xaml;MVVM\View\WeekView.xaml;Theme\BorderTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
-True
+False
 

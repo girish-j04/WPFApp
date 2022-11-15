@@ -93,7 +93,7 @@
                 </Style>
             </StackPanel.Resources>
 
-            <TextBlock Text="This Week"
+            <TextBlock Text="Select City"
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"
@@ -118,7 +118,7 @@
                                HorizontalAlignment="Center"/>
                 </Border>
 
-                <Border Name="Bangalore"
+                <Border Name="Bangaluru"
                         Width="150"
                         Height="150"
                         Background="#4e99ff"
@@ -126,7 +126,7 @@
                         PreviewMouseDown="GetWeather"
                         Style="{StaticResource HighlightOnHover}">
 
-                    <TextBlock Text="Bangalore"
+                    <TextBlock Text="Bangaluru"
                                Foreground="white"
                                FontSize="28"
                                VerticalAlignment="Center"
@@ -134,14 +134,14 @@
 
                 </Border>
 
-                <Border Name="Taguig"
+                <Border Name="Manila"
                         Width="150"
                         Height="150"
                         Background="#4eff91"
                         CornerRadius="10"
                         PreviewMouseDown="GetWeather"
                         Style="{StaticResource HighlightOnHover}">
-                    <TextBlock Text="Taguig"
+                    <TextBlock Text="Manila"
                                Foreground="white"
                                FontSize="28"
                                VerticalAlignment="Center"
@@ -149,13 +149,14 @@
 
                 </Border>
 
-                <Border Width="150"
+                <Border Name="Chennai"
+                        Width="150"
                         Height="150"
                         Background="#ecff4e"
                         CornerRadius="10"
                         Style="{StaticResource HighlightOnHover}">
                     
-                    <TextBlock Text=""
+                    <TextBlock Text="Chennai"
                                Foreground="white"
                                FontSize="28"
                                VerticalAlignment="Center"
