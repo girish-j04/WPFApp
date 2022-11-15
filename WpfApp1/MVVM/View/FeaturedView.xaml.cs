@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Models;
+using WpfApp1.Services;
 
 namespace WpfApp1.MVVM.View
 {
@@ -20,9 +22,16 @@ namespace WpfApp1.MVVM.View
     /// </summary>
     public partial class FeaturedView : UserControl
     {
+        WeatherService weatherService;
         public FeaturedView()
         {
             InitializeComponent();
+            weatherService = new WeatherService();
+        }
+
+        public void GetWeatherForecast(object sender, RoutedEventArgs e)
+        {
+            WeatherForecast weatherForecast = weatherService.GetWeatherForecast("Siliguri");
         }
     }
 }

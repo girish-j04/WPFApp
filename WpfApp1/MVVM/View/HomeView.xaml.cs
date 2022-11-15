@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp1.Models;
+using WpfApp1.Services;
 
 namespace WpfApp1.MVVM.View
 {
@@ -23,27 +24,33 @@ namespace WpfApp1.MVVM.View
     /// </summary>
     public partial class HomeView : UserControl
     {
+        WeatherService weatherService;
         public HomeView()
         {
             InitializeComponent();
+            weatherService = new WeatherService();
         }
-
-        readonly string API_KEY = "8512bcca9b008f3ba2fd20c8d7c52263";
 
         private void GetWeather(object sender, MouseButtonEventArgs e)
         {
             Border ele = (Border)sender;
             string city = ele.Name;
 
-            using (WebClient web = new WebClient())
+            WeatherData weatherData = weatherService.GetWeatherData(city);
+            Temperature.Text = $"Expected\n {weatherData.main.temp}\u00B0C";
+            return;
+        }
+
+        private void SearchWeather(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
             {
-                string url = string.Format("http://api.openweathermap.org/data/2.5/weather?appid={0}&q={1}&units=metric", API_KEY, city);
-                var json = web.DownloadString(url);
-                var output = JsonConvert.DeserializeObject<WeatherData>(json);
+                TextBox ele = (TextBox)sender;
+                string city = ele.Text;
 
-                Temperature.Text = $"Expected\n {output.main.temp}\u00B0C";
+                WeatherData weatherData = weatherService.GetWeatherData(city);
+                Temperature.Text = $"Expected\n {weatherData.main.temp}\u00B0C";
                 return;
-
             }
         }
     }

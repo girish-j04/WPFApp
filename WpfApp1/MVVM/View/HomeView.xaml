@@ -9,11 +9,24 @@
 
     <StackPanel>
 
-        <TextBlock Text="Today's Forecast"
-                   Foreground="White"
-                   FontSize="28"
-                   HorizontalAlignment="Left"
-                   Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="Today's Forecast"
+                       Foreground="White"
+                       FontSize="28"
+                       HorizontalAlignment="Left"
+                       Margin="5,10,0,20"/>
+
+            <TextBox Width="250"
+                     Height="40"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="10"
+                     Grid.Column="1"
+                     Name="searchCity"
+                     KeyDown="SearchWeather"
+                     />
+
+        </StackPanel>
 
         <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,10">

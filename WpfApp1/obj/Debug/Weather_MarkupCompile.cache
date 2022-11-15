@@ -1,19 +1,19 @@
-﻿WpfApp1
+﻿Weather
 
 
 winexe
 C#
 .cs
-C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\obj\Debug\
+D:\WF\WPF\WPFApp\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\giris\Desktop\WpfApp1\WPFApp\WpfApp1\App.xaml
+D:\WF\WPF\WPFApp\WpfApp1\App.xaml
 614593497
 
-14-1810724124
-14-1707191294
+161524722402
+141475458494
 MainWindow.xaml;MVVM\View\FeaturedView.xaml;MVVM\View\HomeView.xaml;Theme\BorderTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 True

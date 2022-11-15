@@ -57,5 +57,7 @@ namespace WpfApp1.Models
         public Clouds clouds { get; set; }
         public Wind wind { get; set; }
         public Main main { get; set; }
+
+        public string dt_txt { get; set; }
     }
 }
